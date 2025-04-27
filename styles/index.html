@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Masa</title>
+</head>
+<body>
+<div class="background">
+  <div class="top">
+    <form class="search-container">
+      <input type="text" id="search-bar" placeholder="Caută un restaurant, bar sau cafenea...">
+      <img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" alt="Search Icon">
+    </form>
+  </div>
+  <div class="bottom">
+    <h3><span style="color: red;">Cele mai rezervate</span> restaurante, baruri sau cafenele din Moldova</h3>
+    <div class="restaurant-container" id="restaurant-list"></div>
+    <div class="no-results hidden" id="no-results">
+      Nu am găsit restaurante care să corespundă căutării tale.
+    </div>
+  </div>
+</div>
+<div class="reservations-button">
+  <button id="saved-reservations-btn">Rezervările mele</button>
+</div>
+
+<div id="reservations-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Rezervările mele</h2>
+    <div id="saved-reservations-list">
+      <p class="no-reservations">Nu aveți rezervări salvate.</p>
+    </div>
+  </div>
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>
